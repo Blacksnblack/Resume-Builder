@@ -50,14 +50,14 @@ int main() {
     getline (cin, Email);
     cout << "What is the name of your School?\n";
     getline (cin, SchoolName);
-    cout << "What is your Major? If You don't have none, type: 'none'\n";
+    cout << "What is your Major? If you don't have one, type: 'none'\n";
     getline (cin, Major);
     if (Major == "none") {
         MajorBool = false;
     }else {
         MajorBool = true;
     }
-    cout << "What is your Minor? If you don't have none, type 'none'\n";
+    cout << "What is your Minor? If you don't have one, type 'none'\n";
     getline (cin, Minor);
     if (Minor == "none") {
         MinorBool = false;
