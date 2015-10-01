@@ -72,7 +72,7 @@ int main() {
         GradDateBool = true;
     }
     cout << "How many degrees do you have?\n";
-    
+     cin >> numOfDegrees;
     
     
     
