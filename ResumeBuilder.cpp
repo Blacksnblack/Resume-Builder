@@ -1,10 +1,3 @@
-//
-//  main.cpp
-//  ResumeBuilder
-//
-//  Created by Terry Black on 9/17/15.
-
-
 #include <iostream>
 using namespace std;
 
@@ -17,9 +10,9 @@ int numOfDegrees;
 string age;
 string phoneNumber;
 string schoolName;
-string major;
+string majorr;
 string concentration;
-string minor;
+string minorr;
 string gradDate;
 string communityInvolvement;
 string name;
@@ -37,40 +30,40 @@ int main() {
     
     cout << "Hello, Welcome to Resume Builder!\n";
     cout << "Input your name:\n";
-    getline (cin, Name);
+    getline (cin, name);
     cout << "How old are you?\n";
-    getline (cin, Age);
+    getline (cin, age);
     cout << "What is your Address?\n";
-    getline (cin, Address);
+    getline (cin, address);
     cout << "What is your Phone Number?\n";
-    getline (cin, PhoneNumber);
+    getline (cin, phoneNumber);
     cout << "What is your email?\n";
-    getline (cin, Email);
+    getline (cin, email);
     cout << "What is the name of your School?\n";
-    getline (cin, SchoolName);
+    getline (cin, schoolName);
     cout << "What is your Major? If you don't have one, type: 'none'\n";
-    getline (cin, Major);
-    if (Major == "none") {
-        MajorBool = false;
+    getline (cin, majorr);
+    if (majorr == "none") {
+        majorBool = false;
     }else {
-        MajorBool = true;
+        majorBool = true;
     }
     cout << "What is your Minor? If you don't have one, type 'none'\n";
-    getline (cin, Minor);
-    if (Minor == "none") {
-        MinorBool = false;
+    getline (cin, minorr);
+    if (minorr == "none") {
+        minorBool = false;
     } else {
-        MinorBool = true;
+        minorBool = true;
     }
     cout << "What is your graduation date? If you are still enrolled or something, type: 'none'\n";
-    getline (cin, GradDate);
-    if (GradDate == "none") {
-        GradDateBool = false;
+    getline (cin, gradDate);
+    if (gradDate == "none") {
+        gradDateBool = false;
     } else {
-        GradDateBool = true;
+        gradDateBool = true;
     }
     cout << "How many degrees do you have?\n";
-     cin >> numOfDegrees;
+    cin >> numOfDegrees;
     
     
     
@@ -78,4 +71,3 @@ int main() {
     
     return 0;
 }
-
