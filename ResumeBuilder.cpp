@@ -6,31 +6,29 @@
 
 
 #include <iostream>
-#include <string>
-using std::string;
 using namespace std;
 
 
-int NumOfGoals;
-int NumOfSkills;
-int NumOfAwards;
-int NumOfJobs;
-int NumOfDegrees;
-string Age;
-string PhoneNumber;
-string SchoolName;
-string Major;
-string Concentration;
-string Minor;
-string GradDate;
-string CommunityInvolvement;
-string Name;
-string Address;
-string Email;
-string Credentials;
-bool MajorBool;
-bool MinorBool;
-bool GradDateBool;
+int numOfGoals;
+int numOfSkills;
+int numOfAwards;
+int numOfJobs;
+int numOfDegrees;
+string age;
+string phoneNumber;
+string schoolName;
+string major;
+string concentration;
+string minor;
+string gradDate;
+string communityInvolvement;
+string name;
+string address;
+string email;
+string credentials;
+bool majorBool;
+bool minorBool;
+bool gradDateBool;
 
 
 
