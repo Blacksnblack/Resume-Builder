@@ -1,12 +1,14 @@
 #include <iostream>
 using namespace std;
 
+//Todo: Add documentation throughout the file 
 
-int numOfGoals;
-int numOfSkills;
-int numOfAwards;
-int numOfJobs;
-int numOfDegrees;
+// Variables
+int numOfGoals = 0;
+int numOfSkills = 0;
+int numOfAwards = 0;
+int numOfJobs = 0;
+int numOfDegrees = 0;
 string age;
 string phoneNumber;
 string schoolName;
@@ -81,6 +83,7 @@ int main() {
     return 0;
 }
 
+// wut is this?
 string jobs (string string) {
     //the return is filler for now
     return string;
