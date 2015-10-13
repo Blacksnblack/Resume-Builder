@@ -75,8 +75,8 @@ int main() {
         string* degrees = new string[numOfDegrees];
         for (int i = 0; i < numOfDegrees; i++) {
         
-        cout << "Degree " << i << ": " << endl;
-        getline (cin, degrees[i]);
+        cout << "Degree " << i + 1 << ": " << endl;
+        cin >> degrees[i];
             
         }
     }
