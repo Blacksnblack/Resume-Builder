@@ -1,14 +1,12 @@
 #include <iostream>
 using namespace std;
 
-//Todo: Add documentation throughout the file 
 
-// Variables
-int numOfGoals = 0;
-int numOfSkills = 0;
-int numOfAwards = 0;
-int numOfJobs = 0;
-int numOfDegrees = 0;
+int numOfGoals;
+int numOfSkills;
+int numOfAwards;
+int numOfJobs;
+int numOfDegrees;
 string age;
 string phoneNumber;
 string schoolName;
@@ -24,12 +22,13 @@ string credentials;
 bool majorBool;
 bool minorBool;
 bool gradDateBool;
+bool degree;
 
 
 
 
 int main() {
-    
+    /*
     cout << "Hello, Welcome to Resume Builder!" << endl;
     cout << "Input your name:" << endl;
     getline (cin, name);
@@ -64,26 +63,37 @@ int main() {
     } else {
         gradDateBool = true;
     }
-    cout << "How many degrees do you have?" << endl;
+    */
+    cout << "How many degrees do you have? if none type 0 (zero)." << endl;
     cin >> numOfDegrees;
-    string* degrees = new string[numOfDegrees];
-    for (int i=0; i < numOfDegrees; i++) {
-        cout << "Degree " << i << endl;
-        getline(cin, degrees[i]);
-        
+    if (numOfDegrees <= 0) {
+        degree = false;
+    } else {
+        degree = true;
     }
+    if (degree == 1) {
+        string* degrees = new string[numOfDegrees];
+        for (int i = 0; i < numOfDegrees; i++) {
+        
+        cout << "Degree " << i << ": " << endl;
+        getline (cin, degrees[i]);
+            
+        }
+    }
+    cout << "it worked." << endl;
     while (numOfJobs > 4 || numOfJobs < 1) {
         cout << "How many jobs do you want to show (up to 4)?" << endl;
         cin >> numOfJobs;
         if (numOfJobs >4 || numOfJobs < 1) {
             cout << "Invalid Input." << endl;
+        } else {
+            cout << "valid input" << endl; //this output is filler
         }
     }
     
     return 0;
 }
 
-// wut is this?
 string jobs (string string) {
     //the return is filler for now
     return string;
